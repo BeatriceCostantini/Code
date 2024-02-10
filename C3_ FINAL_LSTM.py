@@ -1,10 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Dec 20 10:04:14 2023
 
-@author: alba.dantonio
-"""
 from keras.models import Sequential
 from keras.layers import LSTM, Dense, Dropout
 from sklearn.metrics import classification_report
@@ -17,7 +11,7 @@ import numpy as np
 from keras.optimizers import Adam
 
 # Carica il dataset CSV
-file_path = '/Users/alba.dantonio/Desktop/DATABASE_HEELCONTACT_SPHS_final.csv'
+file_path = '/Users/b.costantini/Desktop/DATABASE_HEELCONTACT_CA_final.csv'
 data = pd.read_csv(file_path)
 
 # Prendi le features e il target
