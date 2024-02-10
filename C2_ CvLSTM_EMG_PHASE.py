@@ -11,7 +11,7 @@ from sklearn.metrics import accuracy_score
 from keras.optimizers import Adam, RMSprop
 
 # Carica il dataset CSV
-file_path = '/Users/alba.dantonio/Desktop/EMG CA-HS/DATABASE_TERMINALSTANCE_CAHS.csv'
+file_path = '/Users/b.costantini/Desktop/DATABASE_TERMINALSTANCE_CAHS.csv'
 data = pd.read_csv(file_path)
 
 # Rimuovi la colonna 'phases' dal DataFrame
