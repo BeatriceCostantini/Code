@@ -1,10 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Dec 20 11:04:03 2023
 
-@author: alba.dantonio
-"""
 
 from keras.models import Sequential
 from keras.layers import LSTM, Dense, Dropout
@@ -18,11 +12,11 @@ import numpy as np
 from keras.optimizers import Adam
 
 # Carica il dataset CSV
-file_path = '/Users/alba.dantonio/Desktop/DATABASE_HEELCONTACT_SPHS_final.csv'
+file_path = '/Users/b.costantini/Desktop/DATABASE_HEELCONTACT_CA_final.csv'
 data = pd.read_csv(file_path)
 
-# Converti i valori della colonna 'Patology' da 0 e 1 a 'NORMATIVO' e 'PARAPARETICO'
-data['Patology'] = data['Patology'].replace({0: 'NORMATIVO', 1: 'PARAPARETICO'})
+# Converti i valori della colonna 'Patology' da 0 e 1 a 'NORMATIVO' e 'ATASSIA'
+data['Patology'] = data['Patology'].replace({0: 'NORMATIVO', 1: 'ATASSIA'})
 
 # Prendi le features e il target
 features = ['R_RF', 'R_VL', 'R_VM', 'R_G', 'R_BFCL', 'R_TA', 'R_PL', 'R_SO', 'R_GL', 'R_GMA']
