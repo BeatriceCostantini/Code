@@ -8,8 +8,8 @@ e una seconda fase in Python per l'implementazione di un algoritmo di deep learn
   di prepocessamento del segnale in generale, verificando inoltre il corretto andamento dei segnali muscolari;
   -A4:stesso procedimento del A3 solo che per soggetti atassici; la scelta è sempre derivata da una facilità di gestione e raccolta dei dati. 
   -A5:creazione del dataset finale contenente i segnali muscolari di ciascun paziente, nelle varie sottofasi del cammino, a partire dai singoli file csv creati al punto A1 e A2. 
-  
--I file nominati 'B' sono riferiti invece agli script MATLAB per andare a costruire il dataset per successiva classificazione multiclasse, costutito pertanto dalle percentuali di attivaizoni muscolari per ogni sottofase dle cammino:
+
+- I file nominati 'B' sono riferiti invece agli script MATLAB per andare a costruire il dataset per successiva classificazione multiclasse, costutito pertanto dalle percentuali di attivaizoni muscolari per ogni sottofase dle cammino:
   -B1:preprocessamento dei segnali elettromiografici con successiva creazione di singoli file csv per ciascun paziente, contente le percentuali di attvazione di ciascun muscolo, in ogni sottofase;
   -B2:apertura di ciascun file csv creato in precedenza con codice B1 e creazione del dataset finale.
 
