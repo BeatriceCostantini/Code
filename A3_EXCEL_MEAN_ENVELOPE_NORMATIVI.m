@@ -457,7 +457,8 @@ subplot(5,2,1)
 generalTitle = 'Medium velocity';
 sgtitle(generalTitle)
 xlim([0 100])
-title('EMG Right Rectus Femoris: gait cycle','Color','b')
+ylim([0 1])
+% title('EMG Right Rectus Femoris: gait cycle','Color','b')
 hold on
 plot(new_time_vector,R_RF_mean_envelope_M,'k')
 fill([new_time_vector,fliplr(new_time_vector)],...
@@ -467,7 +468,8 @@ hold off
 
 subplot(5,2,2)
 xlim([0 100])
-title('EMG Right Vastus Lateralis: gait cycle','Color','b')
+ylim([0 1])
+%title('EMG Right Vastus Lateralis: gait cycle','Color','b')
 hold on
 plot(new_time_vector,R_VL_mean_envelope_M,'k')
 fill([new_time_vector, fliplr(new_time_vector)],...
@@ -478,7 +480,8 @@ hold off
 
 subplot(5,2,3)
 xlim([0 100])
-title('EMG Right Vastus Medialis: gait cycle','Color','b')
+ylim([0 1])
+%title('EMG Right Vastus Medialis: gait cycle','Color','b')
 hold on
 plot(new_time_vector,R_VM_mean_envelope_M,'k')
 fill([new_time_vector, fliplr(new_time_vector)],...
@@ -489,7 +492,8 @@ hold off
 
 subplot(5,2,4)
 xlim([0 100])
-title('EMG Right Gluteus Medius: gait cycle','Color','b')
+ylim([0 1])
+%title('EMG Right Gluteus Medius: gait cycle','Color','b')
 hold on
 plot(new_time_vector,R_G_mean_envelope_M,'k')
 fill([new_time_vector, fliplr(new_time_vector)],...
@@ -500,7 +504,8 @@ hold off
 
 subplot(5,2,5)
 xlim([0 100])
-title('EMG Right Biceps femoris caput longus: gait cycle','Color','b')
+ylim([0 1])
+%title('EMG Right Biceps femoris caput longus: gait cycle','Color','b')
 hold on
 plot(new_time_vector,R_BFCL_mean_envelope_M,'k')
 fill([new_time_vector, fliplr(new_time_vector)],...
@@ -511,7 +516,8 @@ hold off
 
 subplot(5,2,6)
 xlim([0 100])
-title('EMG Tibialis anterior: gait cycle','Color','b')
+ylim([0 1])
+%title('EMG Tibialis anterior: gait cycle','Color','b')
 hold on
 plot(new_time_vector,R_TA_mean_envelope_M,'k')
 fill([new_time_vector, fliplr(new_time_vector)],...
@@ -522,7 +528,8 @@ hold off
 
 subplot(5,2,7)
 xlim([0 100])
-title('EMG Peroneus longus: gait cycle','Color','b')
+ylim([0 1])
+%title('EMG Peroneus longus: gait cycle','Color','b')
 hold on
 plot(new_time_vector,R_PL_mean_envelope_M,'k')
 fill([new_time_vector, fliplr(new_time_vector)],...
@@ -533,7 +540,8 @@ hold off
 
 subplot(5,2,8)
 xlim([0 100])
-title('EMG Soleus: gait cycle','Color','b')
+ylim([0 1])
+%title('EMG Soleus: gait cycle','Color','b')
 hold on
 plot(new_time_vector,R_SO_mean_envelope_M,'k')
 fill([new_time_vector, fliplr(new_time_vector)],...
@@ -544,7 +552,8 @@ hold off
 
 subplot(5,2,9)
 xlim([0 100])
-title('EMG Gastrocnemius latralis: gait cycle','Color','b')
+ylim([0 1])
+%title('EMG Gastrocnemius latralis: gait cycle','Color','b')
 hold on
 plot(new_time_vector,R_GL_mean_envelope_M,'k')
 fill([new_time_vector, fliplr(new_time_vector)],...
@@ -555,7 +564,8 @@ hold off
 
 subplot(5,2,10)
 xlim([0 100])
-title('EMG Gluteus maximus:gait cycle','Color','b')
+ylim([0 1])
+%title('EMG Gluteus maximus:gait cycle','Color','b')
 hold on
 plot(new_time_vector,R_GMA_mean_envelope_M,'k')
 fill([new_time_vector, fliplr(new_time_vector)],...
@@ -932,7 +942,8 @@ subplot(5,2,1)
 generalTitle = 'Low velocity';
 sgtitle(generalTitle)
 xlim([0 100])
-title('EMG Right Rectus Femoris: gait cycle','Color','b')
+ylim([0 1])
+%title('EMG Right Rectus Femoris: gait cycle','Color','b')
 hold on
 plot(new_time_vector,R_RF_mean_envelope_L,'k')
 fill([new_time_vector,fliplr(new_time_vector)],...
@@ -942,7 +953,8 @@ hold off
 
 subplot(5,2,2)
 xlim([0 100])
-title('EMG Right Vastus Lateralis: gait cycle','Color','b')
+ylim([0 1])
+%title('EMG Right Vastus Lateralis: gait cycle','Color','b')
 hold on
 plot(new_time_vector,R_VL_mean_envelope_L,'k')
 fill([new_time_vector, fliplr(new_time_vector)],...
@@ -953,7 +965,8 @@ hold off
 
 subplot(5,2,3)
 xlim([0 100])
-title('EMG Right Vastus Medialis: gait cycle','Color','b')
+ylim([0 1])
+%title('EMG Right Vastus Medialis: gait cycle','Color','b')
 hold on
 plot(new_time_vector,R_VM_mean_envelope_L,'k')
 fill([new_time_vector, fliplr(new_time_vector)],...
@@ -964,7 +977,8 @@ hold off
 
 subplot(5,2,4)
 xlim([0 100])
-title('EMG Right Gluteus Medius: gait cycle','Color','b')
+ylim([0 1])
+%title('EMG Right Gluteus Medius: gait cycle','Color','b')
 hold on
 plot(new_time_vector,R_G_mean_envelope_M,'k')
 fill([new_time_vector, fliplr(new_time_vector)],...
@@ -975,7 +989,8 @@ hold off
 
 subplot(5,2,5)
 xlim([0 100])
-title('EMG Right Biceps femoris caput longus: gait cycle','Color','b')
+ylim([0 1])
+%title('EMG Right Biceps femoris caput longus: gait cycle','Color','b')
 hold on
 plot(new_time_vector,R_BFCL_mean_envelope_L,'k')
 fill([new_time_vector, fliplr(new_time_vector)],...
@@ -986,7 +1001,8 @@ hold off
 
 subplot(5,2,6)
 xlim([0 100])
-title('EMG Tibialis anterior: gait cycle','Color','b')
+ylim([0 1])
+%title('EMG Tibialis anterior: gait cycle','Color','b')
 hold on
 plot(new_time_vector,R_TA_mean_envelope_L,'k')
 fill([new_time_vector, fliplr(new_time_vector)],...
@@ -997,7 +1013,8 @@ hold off
 
 subplot(5,2,7)
 xlim([0 100])
-title('EMG Peroneus longus: gait cycle','Color','b')
+ylim([0 1])
+%title('EMG Peroneus longus: gait cycle','Color','b')
 hold on
 plot(new_time_vector,R_PL_mean_envelope_L,'k')
 fill([new_time_vector, fliplr(new_time_vector)],...
@@ -1008,7 +1025,8 @@ hold off
 
 subplot(5,2,8)
 xlim([0 100])
-title('EMG Soleus: gait cycle','Color','b')
+ylim([0 1])
+%title('EMG Soleus: gait cycle','Color','b')
 hold on
 plot(new_time_vector,R_SO_mean_envelope_L,'k')
 fill([new_time_vector, fliplr(new_time_vector)],...
@@ -1019,7 +1037,8 @@ hold off
 
 subplot(5,2,9)
 xlim([0 100])
-title('EMG Gastrocnemius latralis: gait cycle','Color','b')
+ylim([0 1])
+%title('EMG Gastrocnemius latralis: gait cycle','Color','b')
 hold on
 plot(new_time_vector,R_GL_mean_envelope_L,'k')
 fill([new_time_vector, fliplr(new_time_vector)],...
@@ -1030,7 +1049,8 @@ hold off
 
 subplot(5,2,10)
 xlim([0 100])
-title('EMG Gluteus maximus:gait cycle','Color','b')
+ylim([0 1])
+%title('EMG Gluteus maximus:gait cycle','Color','b')
 hold on
 plot(new_time_vector,R_GMA_mean_envelope_L,'k')
 fill([new_time_vector, fliplr(new_time_vector)],...
