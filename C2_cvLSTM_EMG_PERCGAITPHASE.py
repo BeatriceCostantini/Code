@@ -1,10 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Dec 20 17:02:38 2023
 
-@author: alba.dantonio
-"""
 import numpy as np
 import pandas as pd
 from keras.models import Sequential
@@ -17,7 +11,7 @@ from sklearn.metrics import accuracy_score
 from keras.optimizers import Adam, RMSprop
 
 # Carica il dataset CSV
-file_path = '/Users/alba.dantonio/Desktop/Fasi_Atassia_Final.csv'
+file_path = '/Users/b.costantini/Desktop/PHASES_DATABASE_ATAXIA.csv'
 data = pd.read_csv(file_path)
 
 # Prendi le features e il target
