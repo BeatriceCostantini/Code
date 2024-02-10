@@ -1,10 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Dec 13 10:02:31 2023
 
-@author: dantetrabassi
-"""
 # Importo le librerie che mi servono per far runnare il codice
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
@@ -12,10 +6,10 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Carico il set di dati EMG che mi serve
-file_path = '/Users/alba.dantonio/Desktop/EMG SP-HS/DATABASE_MEAN_ENVELOPE_FINAL_PARAPARESI.csv'
+file_path = '/Users/alba.dantonio/Desktop/EMG A-HS/DATABASE_MEAN_ENVELOPE_FINAL_ATAXIA.csv'
 dataset = pd.read_csv(file_path)
 
-# Escludo la prima osservazione di tutte le features e dell'output perchè credo sia un conteggio delle ragazze
+# Escludo la prima osservazione di tutte le features e dell'output
 dataset = dataset.iloc[1:, :]  # Escludo la prima riga
 
 # Escludo le colonne che non mi servono
@@ -72,5 +66,5 @@ plt.tight_layout()  # Per assicurare la corretta visualizzazione
 plt.show()
 
 # Salva il nuovo dataset encodificato come file CSV sul mio desktop
-output_file_path = '/Users/alba.dantonio/Desktop/Dataset_Paraparesi_encodificato.csv'
+output_file_path = '/Users/alba.dantonio/Desktop/Dataset_Ataxia_encodificato.csv'
 dataset_scaled.to_csv(output_file_path, index=False)
