@@ -6,7 +6,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Carico il set di dati EMG che mi serve
-file_path = '/Users/alba.dantonio/Desktop/EMG A-HS/DATABASE_MEAN_ENVELOPE_FINAL_ATAXIA.csv'
+file_path = '/Users/b.costantini/Desktop/DATABASE_MEAN_ENVELOPE_FINAL.csv'
 dataset = pd.read_csv(file_path)
 
 # Escludo la prima osservazione di tutte le features e dell'output
