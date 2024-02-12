@@ -31,11 +31,11 @@ X_train, X_test, y_train, y_test = train_test_split(X, encoded_targets, test_siz
 # Definisci la funzione per creare il modello LSTM
 def create_model():
     model = Sequential()
-    model.add(LSTM(units=100, input_shape=(X_train.shape[1], 1)))  # Consideriamo 1 come numero di time steps
+    model.add(LSTM(units=50, input_shape=(X_train.shape[1], 1)))  # Consideriamo 1 come numero di time steps
     model.add(Dropout(0.2))
     model.add(Dense(1, activation='sigmoid'))
     
-    opt = Adam(learning_rate=0.01)
+    opt = Adam(learning_rate=0.031)
     model.compile(loss='binary_crossentropy', optimizer=opt, metrics=['accuracy'])
     return model
 
@@ -43,7 +43,7 @@ def create_model():
 model = create_model()
 
 # Addestra il modello
-model.fit(X_train.reshape((X_train.shape[0], X_train.shape[1], 1)), y_train, epochs=30, batch_size=16, verbose=0)
+model.fit(X_train.reshape((X_train.shape[0], X_train.shape[1], 1)), y_train, epochs=30, batch_size=32, verbose=0)
 
 # Valuta il modello sul test set
 y_pred_prob = model.predict(X_test.reshape((X_test.shape[0], X_test.shape[1], 1)))
