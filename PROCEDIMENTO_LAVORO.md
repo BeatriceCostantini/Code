@@ -11,7 +11,7 @@ e una seconda fase in Python per l'implementazione di un algoritmo di deep learn
     - B2:apertura di ciascun file csv creato in precedenza con codice B1 e creazione del dataset finale.
 
 - I file nominati 'C' sono riferiti agli script Pyhton utilizzati per :
-  - C1: preprocessare i dataset;
+  - C1: preprocessare entrambi i dataset;
   - C2: creare il modello LSTM per entrambi i dataset utilizzati; in particolare i file sono due ma prevedono la stessa struttura, perchè sono per i due diversi dataset; lo script relativo al dataset comprendente le sottofasi del passo è stato ripetuto per ogni sottofase specifica (i cui dati sono stati inclusi in dataset separati), per poter estrarre gli iperparametri necessari per la fase di ottimizzazioe del LSTM successiva. 
   - C3: modello LSTM con iperparametri ottimizzati (nel seguente codice è riportato il modello con gli iperparametri estratti per la sottofase di heel contact, solo come esempio di struttura);
-  - C4: valutazione delle metriche di performance e algoritmo di permutation importance. 
+  - C4: valutazione delle metriche di performance e algoritmo di permutation importance, ripetuto per entrambi i dataset. 
