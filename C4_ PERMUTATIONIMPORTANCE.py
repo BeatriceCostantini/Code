@@ -11,6 +11,7 @@ import pandas as pd
 import numpy as np
 from keras.optimizers import Adam
 
+
 # Carica il dataset CSV
 file_path = '/Users/b.costantini/Desktop/DATABASE_HEELCONTACT_CA_final.csv'
 data = pd.read_csv(file_path)
