@@ -45,25 +45,6 @@ label_encoder_output = LabelEncoder()
 dataset_scaled['Patology'] = label_encoder_output.fit_transform(dataset_scaled['Patology'])
 dataset_scaled['Patology'] = dataset_scaled['Patology'].map({0: 1, 1: 0})
 
-# Creo  heatmap di correlazione per andare a valutare il grado di correlazione parziale (multicollinearità?)
-correlation_matrix = dataset_scaled.corr()
-
-# Creazione della heatmap con alcuni parametri aggiuntivi per la visualizzazione
-plt.figure(figsize=(12, 10))  # Dimensioni del plot
-
-# Visualizzazione della heatmap
-sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f", linewidths=0.5)  # Aggiunta delle annotazioni e specifica del formato dei numeri
-
-# Regolazione degli assi
-plt.xticks(rotation=45)  # Ruota le etichette dell'asse x di 45 gradi
-plt.yticks(rotation=0)   # Non ruota le etichette dell'asse y
-
-# Titolo del plot
-plt.title('Heatmap di Correlazione')
-
-# Visualizzazione
-plt.tight_layout()  # Per assicurare la corretta visualizzazione
-plt.show()
 
 # Salva il nuovo dataset encodificato come file CSV sul mio desktop
 output_file_path = '/Users/alba.dantonio/Desktop/Dataset_Ataxia_encodificato.csv'
