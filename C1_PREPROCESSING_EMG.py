@@ -47,5 +47,5 @@ dataset_scaled['Patology'] = dataset_scaled['Patology'].map({0: 1, 1: 0})
 
 
 # Salva il nuovo dataset encodificato come file CSV sul mio desktop
-output_file_path = '/Users/alba.dantonio/Desktop/Dataset_Ataxia_encodificato.csv'
+output_file_path = '/Users/b.costantini/Desktop/Dataset_Ataxia_encodificato.csv'
 dataset_scaled.to_csv(output_file_path, index=False)
