@@ -2,8 +2,7 @@
 # Importo le librerie che mi servono per far runnare il codice
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
-import seaborn as sns
-import matplotlib.pyplot as plt
+
 
 # Carico il set di dati EMG che mi serve
 file_path = '/Users/b.costantini/Desktop/DATABASE_MEAN_ENVELOPE_FINAL.csv'
